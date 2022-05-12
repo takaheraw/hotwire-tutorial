@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: ${{ matrix.ruby }} ${{ matrix.aaa }}
+    name: ${{ matrix.fruit }} ${{ matrix.animal }}  ${{ matrix.color }}
     runs-on: ubuntu-latest
 
     strategy:
@@ -24,8 +24,6 @@ jobs:
           - fruit: banana
           - fruit: banana
             animal: cat
-          - aaa: "5"
-          - aaa: "66"
 
     steps:
       - uses: actions/checkout@v3
