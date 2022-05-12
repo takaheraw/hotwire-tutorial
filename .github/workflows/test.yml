@@ -13,8 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        mysql: 
-          - 8
+        mysql: [8]
         include:
           - color: green1
             animal: cat1
