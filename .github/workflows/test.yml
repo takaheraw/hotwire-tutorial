@@ -13,17 +13,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        ruby: 
+          - 3
         include:
           - color: green1
             animal: cat1
-            ruby: cat1
           - color: green2
             animal: cat2
-            ruby: cat2
-
-    env:
-      - run: |
-          echo Add other actions to build,
 
     steps:
       - uses: actions/checkout@v3
