@@ -18,10 +18,10 @@ jobs:
         include:
           - rails: "6.0.5"
             env: 
-              hoge: "rails6.0"
+              hoge: "rails60"
           - rails: "6.1.6"
             env: 
-              hoge: "rails6.1"
+              hoge: "rails61"
 
     steps:
       - uses: actions/checkout@v3
