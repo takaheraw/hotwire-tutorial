@@ -7,23 +7,18 @@ on:
 
 jobs:
   build:
-    name: ${{ matrix.fruit }} ${{ matrix.animal }}  ${{ matrix.color }}
+    name: ${{ matrix.fruit }} ${{ matrix.animal }}  ${{ matrix.mysql }}
     runs-on: ubuntu-latest
 
     strategy:
       fail-fast: false
       matrix:
-        fruit: [apple, pear]
-        animal: [cat, dog]
+        mysql: 8
         include:
-          - color: green
-          - color: pink
-            animal: cat
-          - fruit: apple
-            shape: circle
-          - fruit: banana
-          - fruit: banana
-            animal: cat
+          - color: green1
+            animal: cat1
+          - color: green2
+            animal: cat2
 
     steps:
       - uses: actions/checkout@v3
