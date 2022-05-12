@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: ${{ matrix.fruit }} ${{ matrix.animal }}  ${{ matrix.mysql }}
+    name: ${{ matrix.fruit }} ${{ matrix.animal }}  ${{ matrix.ruby }}
     runs-on: ubuntu-latest
 
     strategy:
