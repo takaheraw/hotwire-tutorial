@@ -17,9 +17,9 @@ jobs:
           - 3.0
         include:
           - ruby: 3.0
-            AR_VERSION: 7.0
+            AR_VERSION: gem/7.0
           - ruby: 3.1
-            AR_VERSION: 7.1
+            AR_VERSION: gem/7.1
 
     steps:
       - uses: actions/checkout@v3
