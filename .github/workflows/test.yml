@@ -14,7 +14,7 @@ jobs:
       fail-fast: false
       matrix:
         color: 
-          - 3
+          - green1
         include:
           - color: green1
             env:
