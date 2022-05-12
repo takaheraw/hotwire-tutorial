@@ -16,10 +16,10 @@ jobs:
         ruby:
           - "3.0"
         include:
-          - rails: "6.0.5"
+          - rails: "65"
             env: 
               hoge: "rails60"
-          - rails: "6.1.6"
+          - rails: "66"
             env: 
               hoge: "rails61"
 
