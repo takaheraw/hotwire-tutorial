@@ -16,12 +16,8 @@ jobs:
         ruby:
           - "3.0"
         include:
-          - rails: "65"
-            env: 
-              hoge: "rails60"
+          - rails: "5"
           - rails: "66"
-            env: 
-              hoge: "rails61"
 
     steps:
       - uses: actions/checkout@v3
