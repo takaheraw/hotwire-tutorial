@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: ${{ matrix.ruby }} ${{ matrix.rails }} ${{ matrix.gem }}
+    name: ${{ matrix.ruby }} ${{ matrix.aaa }}
     runs-on: ubuntu-latest
 
     strategy:
