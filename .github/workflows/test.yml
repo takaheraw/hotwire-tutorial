@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ruby: 
+        color: 
           - 3
         include:
           - color: green1
