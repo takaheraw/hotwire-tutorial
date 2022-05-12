@@ -14,12 +14,12 @@ jobs:
       fail-fast: false
       matrix:
         ruby: 
-          - 3.0
+          - "3.0"
         include:
-          - rails: 6.0.5
-            gemN: rails_6.0
-          - rails: 6.1.6
-            gem: rails_6.1
+          - rails: "6.0.5"
+            gemN: "rails_6.0"
+          - rails: "6.1.6"
+            gem: "rails_6.1"
 
     steps:
       - uses: actions/checkout@v3
