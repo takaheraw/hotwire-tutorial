@@ -7,7 +7,18 @@ on:
 
 jobs:
   build:
+    name: ${{ matrix.ruby }} ${{ matrix.AR_VERSION }}
     runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - ruby: '3.0'
+            AR_VERSION: '7.0'
+          - ruby: '3.0'
+            AR_VERSION: '7.0'
+
     steps:
       - uses: actions/checkout@v3
 
@@ -18,4 +29,3 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project. 
-          echo ${{ github.repository/-/_ }}
