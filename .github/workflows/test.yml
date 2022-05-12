@@ -17,9 +17,11 @@ jobs:
           - 3
         include:
           - color: green1
-            animal: cat1
+            env:
+              HOGE: hoge1
           - color: green2
-            animal: cat2
+            env:
+              HOGE: hoge2
 
     steps:
       - uses: actions/checkout@v3
