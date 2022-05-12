@@ -21,6 +21,10 @@ jobs:
             animal: cat2
             ruby: cat2
 
+    env:
+      - run: |
+          echo Add other actions to build,
+
     steps:
       - uses: actions/checkout@v3
 
