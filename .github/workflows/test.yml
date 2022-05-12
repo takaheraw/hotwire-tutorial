@@ -16,10 +16,10 @@ jobs:
         ruby: 
           - 3.0
         include:
-          - ruby: 3.0
-            AR_VERSION: gem/7.0
-          - ruby: 3.1
-            AR_VERSION: gem/7.1
+          - ruby: 6.0.5
+            AR_VERSION: rails_6.0
+          - ruby: 6.1.6
+            AR_VERSION: rails_6.1
 
     steps:
       - uses: actions/checkout@v3
